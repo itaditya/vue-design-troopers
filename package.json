@@ -13,7 +13,8 @@
     "cy:openvisual": "cypress open --config testFiles='*.visualspec.js'",
     "cy:openpercy": "percy exec --  cypress open --config testFiles='*.percyspec.js'",
     "cy:run": "cypress run",
-    "cy:runpercy": "percy exec --  cypress run"
+    "cy:runpercy": "percy exec --  cypress run",
+    "cy:ci": "yarn docs & wait-on http://localhost:6061 && yarn cy:runpercy"
   },
   "dependencies": {
     "core-js": "^3.3.2",
@@ -33,7 +34,8 @@
     "eslint-plugin-vue": "^5.0.0",
     "tailwindcss": "^1.1.3",
     "vue-cli-plugin-styleguidist": "^3.26.2",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "wait-on": "^3.3.0"
   },
   "eslintConfig": {
     "root": true,
