@@ -1,6 +1,6 @@
 <template>
   <button
-    class="dt-flex dt-items-center dt-justify-center dt-transition-all dt-transition-500 focus:dt-outline-none focus:dt-shadow-outline disabled:dt-opacity-50 disabled:dt-cursor-not-allowed"
+    class="dt-flex dt-items-center dt-justify-center dt-transition-all dt-transition-500 focus:dt-outline-none focus:dt-shadow-outline disabled:dt-cursor-not-allowed"
     :class="classObject"
     @click="$emit('click')"
   >
