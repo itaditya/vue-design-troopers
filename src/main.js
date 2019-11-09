@@ -1,10 +1,3 @@
-import Vue from 'vue'
-import App from './App.vue'
+export { default as Button } from './components/Button/Button.vue';
 
-import '@/assets/style.css'
-
-Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+import '@/assets/style.css';
